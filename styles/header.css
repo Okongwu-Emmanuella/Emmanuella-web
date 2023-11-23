@@ -1,0 +1,161 @@
+.header {
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /*objects with a higher z-index will be placed on object with a lower z-index*/
+    z-index: 100px;
+    background-color: white;
+    border-bottom-width:1px ;
+    border-bottom-style:solid ;
+    border-bottom-color:rgb(197, 192, 192) ;
+}
+.left-section {
+
+    display: flex;
+    align-items: center;
+}
+.middle-section {
+    display: flex;
+    
+    flex: 1;
+    
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+.right-section {
+    margin-right: 200px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*flex shrink prevents the items from shrinking*/
+    flex-shrink: 0;
+}
+.hamburger-menu {
+height: 20px;
+margin-left: 24px;
+margin-right: 24px;
+}
+.notifications {
+height: 20px;
+}
+.search-icon {
+    
+    height: 25px ;
+    
+}
+.search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    width: 0;
+    border: 1px solid #bdb3b3;;
+    
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 14px;
+}
+.search-button {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(248, 238, 238);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(33, 28, 28);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+}
+.search-button,
+.voice,
+.upload-icon,
+.note-icon {
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    position: relative;}
+
+.search-button .tool-tip,
+.voice .tool-tip,
+.upload-icon .tool-tip, 
+.note-icon .tool-tip{
+    font-family: Roboto,Arial;
+    position: absolute;
+    background-color: grey;
+    color: white;
+    top: 70%;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: -30pxs;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tool-tip,
+.voice:hover .tool-tip,
+.upload-icon:hover .tool-tip,
+.note-icon:hover .tool-tip {
+    opacity: 1;
+}
+
+
+.voice {
+ height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(250, 248, 248);
+    position: relative;
+    
+}
+.voice-icon {
+    height: 25px;
+    
+    
+}
+.upload {
+    height:24px ;
+}
+.you-apps {
+    height: 24px;
+}
+.notify {
+    height: 24px;
+}
+.note-icon {
+    position: relative;
+}
+.note-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+.my-chan {
+    height: 32px;
+    border-radius: 16px;
+}
