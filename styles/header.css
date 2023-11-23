@@ -80,7 +80,8 @@ height: 20px;
 .search-button,
 .voice,
 .upload-icon,
-.note-icon {
+.note-icon,
+.su-apps {
     display: flex;
     justify-content: center;
     align-items: centre;
@@ -88,6 +89,7 @@ height: 20px;
 
 .search-button .tool-tip,
 .voice .tool-tip,
+.su-apps .tool-tip,
 .upload-icon .tool-tip, 
 .note-icon .tool-tip{
     font-family: Roboto,Arial;
@@ -109,6 +111,7 @@ height: 20px;
 }
 .search-button:hover .tool-tip,
 .voice:hover .tool-tip,
+.su-apps:hover .tool-tip,
 .upload-icon:hover .tool-tip,
 .note-icon:hover .tool-tip {
     opacity: 1;
